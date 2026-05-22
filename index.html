@@ -2,18 +2,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Página Pessoal - João Vittor Ferreira da silva</title>
+    <title>Página Pessoal - João</title>
 
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             background-color: #0f172a;
             color: white;
             margin: 0;
         }
 
         header {
-            text-align: center;
             background-color: #1e293b;
             padding: 20px;
         }
@@ -28,7 +27,7 @@
             padding: 20px;
         }
 
-        section {
+        section, aside {
             margin-bottom: 20px;
             background-color: #1e293b;
             padding: 15px;
@@ -54,11 +53,12 @@
             padding: 10px;
         }
         
-        section:hover {
-    transform: scale(1.03);
-    transition: 0.3s;
-}
-        .topo{
+        section:hover, aside:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+
+        .topo {
           display: flex;
           align-items: center;
           gap: 20px;
@@ -72,10 +72,10 @@
 <header>
    <div class="topo">
     <img src="img/eu2.webp" alt="Minha foto">
-   <div>
-    <h1>João Vittor</h1>
-    <h2>911c - Desenvolvimento de Sistemas</h2>
-   </div>
+    <div>
+        <h1>João Vitor</h1>
+        <h2>911c - Desenvolvimento de Sistemas</h2>
+    </div>
    </div>
 </header>
 
@@ -102,7 +102,7 @@
         <ul>
             <li>HTML básico</li>
             <li>CSS básico</li>
-            <li>JavaScript(iniciante)</li>
+            <li>JavaScript (iniciante)</li>
         </ul>
     </section>
 
@@ -110,21 +110,30 @@
         <h3>Curso</h3>
         <p>
             Estou fazendo um curso técnico na área de tecnologia.
-            saiba mais no site :
+            Saiba mais no site:
         </p>
-
         <a href="https://www.instagram.com/if4lscript_911c?igsh=ZHZidDRpendmMDBu" target="_blank">
             Acessar site do curso
         </a>
     </aside>
 
     <section>
-        <h3>Capítulo 4 - Tabelas,Listas e Mídia</h3>
+        <h3>Capítulo 4 - Tabelas, Listas e Mídia</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="cap04-at01-tabela-basica.html" target="_blank">Atividade 01 - Tabela Básica</a></li>
+            <li><a href="cap04-at02-tabela-semantica.html" target="_blank">Atividade 02 - Tabela Semântica com Mesclagem</a></li>
+            <li><a href="cap04-at03-listas-avancadas.html" target="_blank">Atividade 03 - Listas Avançadas e Glossário</a></li>
+            <li><a href="cap04-at04-multimidia.html" target="_blank">Atividade 04 - Página Multimídia</a></li>
+        </ul>
+    </section>
+    <section>
+      <h3>Capitulo 5 - Formulários HTML</h3>
+        <ul>
+          <li><a href="at01.html" target="_blank">Atividade 01 - Formulário de Cadastro</a></li>
+          <li><a href="at02.html" target="_blank">Atividade 02 - Form de Contato e Mensagem</a></li>
+          <li><a href="at03.html" target="_blank">Atividade 03 - Questionário e Inputs Avançados</a></li>
+          <li><a href="at04.html" target="_blank">Atividade 04 - Pesquisa de Satisfação</a></li>
+          <li><a href="at05.html" target="_blank">Atividade 05 - Login-Sistema</a></li>
         </ul>
     </section>
 </main>
