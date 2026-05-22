@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Multimídia</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1{
+            color: #38bdf8;
+        }
+
+        main{
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        figure{
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        figure:hover{
+            transform: scale(1.01);
+        }
+
+        video,
+        iframe,
+        img{
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        audio{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        figcaption{
+            margin-top: 15px;
+            color: #cbd5e1;
+        }
+
+        hr{
+            border: 1px solid #334155;
+            margin: 40px 0;
+        }
+
+        a{
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            color: #94a3b8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Recursos Multimídia — Aprendizado Web</h1>
+
+        <p>
+            Estudante: João Silva |
+            Matrícula: 202601042 |
+            Data: 20/05/2026
+        </p>
+
+    </header>
+
+    <main>
+
+        <figure>
+
+            <video controls poster="poster-aula.jpg" preload="metadata">
+
+                <source src="videos/aula-html.mp4" type="video/mp4">
+
+                <source src="videos/aula-html.webm" type="video/webm">
+
+                <track
+                    kind="subtitles"
+                    src="legendas/aula-html.vtt"
+                    srclang="pt"
+                    label="Português"
+                    default
+                >
+
+                Seu navegador não suporta vídeo.
+
+            </video>
+
+            <figcaption>
+                Vídeo demonstrativo sobre marcação semântica em HTML5.
+            </figcaption>
+
+        </figure>
+
+        <hr>
+
+        <figure>
+
+            <audio controls preload="metadata">
+
+                <source src="audios/podcast-ep1.mp3" type="audio/mpeg">
+
+                <source src="audios/podcast-ep1.ogg" type="audio/ogg">
+
+                Seu navegador não suporta áudio.
+
+            </audio>
+
+            <figcaption>
+                Podcast Episódio 1 — Introdução ao Ecossistema Web.
+            </figcaption>
+
+        </figure>
+
+        <hr>
+
+        <figure>
+
+            <iframe
+                height="450"
+                src="https://youtu.be/2vADE_jWz9I?si=xlym8smY8YMlddcv"
+                title="Vídeo educacional"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+            <figcaption>
+                Vídeo complementar sobre a evolução da internet.
+            </figcaption>
+
+        </figure>
+
+        <hr>
+
+        <figure>
+
+            <picture>
+
+                <source
+                    media="(min-width: 768px)"
+                    srcset="img/banner-wide.jpg"
+                >
+
+                <img
+                    src="banner-mobile.jpg"
+                    alt="Banner sobre design responsivo"
+                    loading="lazy"
+                >
+
+            </picture>
+
+            <figcaption>
+                Banner representando design responsivo.
+            </figcaption>
+
+        </figure>
+
+        <
