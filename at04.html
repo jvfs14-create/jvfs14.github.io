@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 30px;
+        }
+
+        form{
+            max-width: 700px;
+            margin: auto;
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        p{
+            margin-bottom: 25px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 10px;
+            color: #cbd5e1;
+            font-weight: bold;
+        }
+
+        input[type="date"],
+        input[type="file"]{
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #475569;
+            background-color: #0f172a;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        input[type="date"]:focus,
+        input[type="file"]:focus{
+            outline: none;
+            border-color: #38bdf8;
+        }
+
+        input[type="range"]{
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .range-numeros{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            color: #94a3b8;
+        }
+
+        button{
+            background-color: #22c55e;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #16a34a;
+            transform: scale(1.03);
+        }
+
+        .voltar{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a{
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Pesquisa de Satisfação do Curso</h1>
+
+    <form action="processar-pesquisa.php" method="POST">
+
+        <p>
+
+            <label for="id-data">
+                Data da Avaliação:
+            </label>
+
+            <input
+                type="date"
+                id="id-data"
+                name="data_avaliacao"
+                required
+            >
+
+        </p>
+
+        <p>
+
+            <label for="id-nota">
+                Qual nota você dá para a estrutura do laboratório?
+            </label>
+
+            <input
+                type="range"
+                id="id-nota"
+                name="nota_infra"
+                min="1"
+                max="10"
+                value="5"
+            >
+
+            <div class="range-numeros">
+                <span>1</span>
+                <span>10</span>
+            </div>
+
+        </p>
+
+        <p>
+
+            <label for="id-comprovante">
+                Envie seu comprovante de matrícula:
+            </label>
+
+            <input
+                type="file"
+                id="id-comprovante"
+                name="comprovante"
+                accept=".pdf, image/*"
+            >
+
+        </p>
+
+        <button type="submit">
+            Enviar Pesquisa
+        </button>
+
+    </form>
+
+    <div class="voltar">
+
+        <a href="../index.html">
+            ← Voltar para página principal
+        </a>
+
+    </div>
+
+</body>
+</html>

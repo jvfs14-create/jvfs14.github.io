@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de Perfil</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: #38bdf8;
+        }
+
+        form{
+            max-width: 700px;
+            margin: auto;
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        fieldset{
+            border: 2px solid #334155;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend{
+            color: #38bdf8;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        p{
+            margin: 15px 0;
+        }
+
+        label{
+            margin-left: 8px;
+            color: #cbd5e1;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"]{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        button{
+            background-color: #22c55e;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #16a34a;
+        }
+
+        .voltar{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a{
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Questionário de Perfil Escolar</h1>
+
+    <form action="salvar-perfil.php" method="POST">
+
+        <fieldset>
+
+            <legend>
+                Qual é o seu turno de estudos?
+            </legend>
+
+            <p>
+
+                <input
+                    type="radio"
+                    id="id-matutino"
+                    name="turno"
+                    value="matutino"
+                    required
+                >
+
+                <label for="id-matutino">
+                    Matutino (Manhã)
+                </label>
+
+            </p>
+
+            <p>
+
+                <input
+                    type="radio"
+                    id="id-vespertino"
+                    name="turno"
+                    value="vespertino"
+                >
+
+                <label for="id-vespertino">
+                    Vespertino (Tarde)
+                </label>
+
+            </p>
+
+            <p>
+
+                <input
+                    type="radio"
+                    id="id-noturno"
+                    name="turno"
+                    value="noturno"
+                >
+
+                <label for="id-noturno">
+                    Noturno (Noite)
+                </label>
+
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>
+                Quais áreas da tecnologia você tem interesse?
+            </legend>
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="id-front"
+                    name="interesses"
+                    value="frontend"
+                >
+
+                <label for="id-front">
+                    Desenvolvimento Frontend
+                </label>
+
+            </p>
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="id-back"
+                    name="interesses"
+                    value="backend"
+                >
+
+                <label for="id-back">
+                    Desenvolvimento Backend
+                </label>
+
+            </p>
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="id-jogos"
+                    name="interesses"
+                    value="games"
+                >
+
+                <label for="id-jogos">
+                    Desenvolvimento de Jogos
+                </label>
+
+            </p>
+
+            <p>
+
+                <input
+                    type="checkbox"
+                    id="id-infra"
+                    name="interesses"
+                    value="infra"
+                >
+
+                <label for="id-infra">
+                    Infraestrutura e Redes
+                </label>
+
+            </p>
+
+        </fieldset>
+
+        <button type="submit">
+            Enviar Respostas
+        </button>
+
+    </form>
+
+    <div class="voltar">
+
+        <a href="../index.html">
+            ← Voltar para página principal
+        </a>
+
+    </div>
+
+</body>
+</html>

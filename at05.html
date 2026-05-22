@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container{
+            width: 100%;
+            max-width: 450px;
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        h1{
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        fieldset{
+            border: 2px solid #334155;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        legend{
+            color: #38bdf8;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 8px;
+            color: #cbd5e1;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #475569;
+            background-color: #0f172a;
+            color: white;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        input:focus{
+            outline: none;
+            border-color: #38bdf8;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background-color: #22c55e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #16a34a;
+            transform: scale(1.02);
+        }
+
+        .voltar{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a{
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Acesso ao Sistema</h1>
+
+        <form action="autenticar.php" method="POST">
+
+            <fieldset>
+
+                <legend>
+                    Identificação do Usuário
+                </legend>
+
+                <p>
+
+                    <label for="id-login">
+                        Nome de Usuário (Login):
+                    </label>
+
+                    <input
+                        type="text"
+                        id="id-login"
+                        name="login"
+                        required
+                        minlength="4"
+                        maxlength="15"
+                        placeholder="Ex: joao_vitor"
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="id-senha">
+                        Senha de Acesso:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="id-senha"
+                        name="senha"
+                        required
+                        minlength="8"
+                        placeholder="No mínimo 8 caracteres"
+                    >
+
+                </p>
+
+                <button type="submit">
+                    Entrar
+                </button>
+
+            </fieldset>
+
+        </form>
+
+        <div class="voltar">
+
+            <a href="../index.html">
+                ← Voltar para página principal
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
