@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+</head>
+
+<body>
+
+    <h1>Pesquisa de Satisfação do Curso</h1>
+
+    <form action="processar-pesquisa.php" method="POST">
+
+        <p>
+
+            <label for="id-data">
+                Data da Avaliação:
+            </label>
+
+            <input
+                type="date"
+                id="id-data"
+                name="data_avaliacao"
+                required
+            >
+
+        </p>
+
+        <p>
+
+            <label for="id-nota">
+                Qual nota você dá para a estrutura do laboratório?
+            </label>
+
+            <input
+                type="range"
+                id="id-nota"
+                name="nota_infra"
+                min="1"
+                max="10"
+                value="5"
+            >
+
+            <div class="range-numeros">
+                <span>1</span>
+                <span>10</span>
+            </div>
+
+        </p>
+
+        <p>
+
+            <label for="id-comprovante">
+                Envie seu comprovante de matrícula:
+            </label>
+
+            <input
+                type="file"
+                id="id-comprovante"
+                name="comprovante"
+                accept=".pdf, image/*"
+            >
+
+        </p>
+
+        <button type="submit">
+            Enviar Pesquisa
+        </button>
+
+    </form>
+
+    <div class="voltar">
+
+        <a href="index.html">
+            ← Voltar para página principal
+        </a>
+
+    </div>
+
+</body>
+</html>
