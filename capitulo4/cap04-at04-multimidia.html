@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Multimídia</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Recursos Multimídia — Aprendizado Web</h1>
+
+        <p>
+            Estudante: João Silva |
+            Matrícula: 202601042 |
+            Data: 20/05/2026
+        </p>
+
+    </header>
+
+    <main>
+
+        <figure>
+
+            <video controls poster="poster-aula.jpg" preload="metadata">
+
+                <source src="videos/aula-html.mp4" type="video/mp4">
+
+                <source src="videos/aula-html.webm" type="video/webm">
+
+                <track
+                    kind="subtitles"
+                    src="legendas/aula-html.vtt"
+                    srclang="pt"
+                    label="Português"
+                    default
+                >
+
+                Seu navegador não suporta vídeo.
+
+            </video>
+
+            <figcaption>
+                Vídeo demonstrativo sobre marcação semântica em HTML5.
+            </figcaption>
+
+        </figure>
+
+        <hr>
+
+        <figure>
+
+            <audio controls preload="metadata">
+
+                <source src="audios/podcast-ep1.mp3" type="audio/mpeg">
+
+                <source src="audios/podcast-ep1.ogg" type="audio/ogg">
+
+                Seu navegador não suporta áudio.
+
+            </audio>
+
+            <figcaption>
+                Podcast Episódio 1 — Introdução ao Ecossistema Web.
+            </figcaption>
+
+        </figure>
+
+        <hr>
+
+        <figure>
+
+            <iframe
+                height="450"
+                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                title="Vídeo educacional"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+            <figcaption>
+                Vídeo complementar sobre a evolução da internet.
+            </figcaption>
+
+        </figure>
+
+        <hr>
+
+        <figure>
+
+            <picture>
+
+                <source
+                    media="(min-width: 768px)"
+                    srcset="img/banner-wide.jpg"
+                >
+
+                <img
+                    src="banner-mobile.jpg"
+                    alt="Banner sobre design responsivo"
+                    loading="lazy"
+                >
+
+            </picture>
+
+            <figcaption>
+                Banner representando design responsivo.
+            </figcaption>
+
+        </figure>
+
+        <p style="text-align:center; margin-top:30px;">
+            <a href="index.html">
+                ← Voltar para página principal
+            </a>
+        </p>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Curso de Sistemas de Informação
+        </p>
+
+    </footer>
+
+</body>
+</html>
