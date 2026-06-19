@@ -7,7 +7,9 @@
     font-family: "Poppins";
     src: url("fonts/Poppins-Regular.ttf");
 }
-
+*{
+   box-sizing: border-box;
+}
 /* =========================
    CONFIGURAÇÕES GERAIS
    ========================= */
@@ -39,7 +41,6 @@ header h1 {
 
 header img {
     height: 60px; /* Altura da imagem Torii */
-    margin-right: 0;
 }
 
 /* Classes auxiliares para cores */
@@ -82,8 +83,7 @@ header img {
     /* Centraliza ou ajusta a posição para focar na parte bonita da imagem */
     background-position: center bottom; 
 
-    padding: 60px 40px 40px 40px; 
-    box-sizing: border-box;
+    padding: 60px 40px 40px 40px;
 }
 
 /* =========================
@@ -159,8 +159,6 @@ header img {
     background: #f0f0f0; /* Fundo cinza claro */
     border-radius: 10px; /* Cantos arredondados */
 
-    box-sizing: border-box;
-
     position: relative;
     left: 25px; /* Move formulário para direita */
     margin-top: -10px; /* Ajuste vertical */
@@ -228,20 +226,12 @@ header img {
 }
 
 input {
-    width: 100%; /* Ocupa toda a largura */
     box-sizing: border-box;
 }
 
 /* =========================
    NÍVEL DE JAPONÊS
    ========================= */
-
-.niveis {
-    display: flex;
-    flex-direction: column;
-    margin-top: -39px;
-}
-
 h3 {
     margin-top: 40px;
     margin-bottom: 15px;
