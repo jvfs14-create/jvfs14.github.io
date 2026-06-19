@@ -229,18 +229,7 @@ header img {
 
 input {
     width: 100%; /* Ocupa toda a largura */
-    box-sizing: border-box;
-}
-
-/* =========================
-   NÍVEL DE JAPONÊS
-   ========================= */
-
-.niveis {
-    display: flex;
-    flex-direction: column;
-    margin-top: -39px;
-}
+    box-sizing: border-box;}
 
 h3 {
     margin-top: 40px;
