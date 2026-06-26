@@ -310,3 +310,7 @@ h3 {
 .btn-limpar:hover {
     background-color: #e0e0e0;
 }
+
+html{
+   zoom: 125%;
+}
