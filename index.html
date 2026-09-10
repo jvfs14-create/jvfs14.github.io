@@ -1,98 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Página Pessoal - João</title>
-    <link rel="stylesheet" href="css/style.css">
+<!-- ============================================================
+     TEMPLATE — Página pessoal com CSS Grid
+     Programação Web / Introdução às Tecnologias Web — IFAL
+     COMO USAR:
+     1) Copie ESTE index.html para o seu repositório (não mude a estrutura).
+     2) Escolha UM dos 3 temas de CSS (tema-1-indigo.css, tema-2-escuro.css
+        ou tema-3-editorial.css) e salve-o no seu projeto como  estilo.css
+        (é o nome que este HTML carrega logo abaixo).
+     3) Troque os textos marcados com "TROQUE" pelo seu conteúdo.
+     IMPORTANTE: o LAYOUT é feito com CSS Grid e é o mesmo nos 3 temas.
+     Você escolhe a APARÊNCIA (fonte, cores, bordas), não o layout.
+     ============================================================ -->
+<html lang="pt-BR">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal — Seu Nome</title>
+  <!-- Salve o tema escolhido como "estilo.css" (mesma pasta deste arquivo) -->
+  <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
+  <div class="pagina">
 
-<header>
-   <div class="topo">
-    <img src="img/eu2.webp" alt="Minha foto">
-    <div>
-        <h1>João Vittor</h1>
-        <h2>911C - Desenvolvimento de Sistemas</h2>
-    </div>
-   </div>
-</header>
+    <!-- ====== CABEÇALHO — TROQUE pelo seu nome e sua frase ====== -->
+    <header class="cabecalho">
+      <h1>Seu Nome</h1>
+      <p>Estudante de Sistemas de Informação · IFAL</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-<main>
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main class="principal">
+      <section id="sobre" class="cartao">
+        <h2>Sobre mim</h2>
+        <!-- TROQUE por uma breve apresentação sua -->
+        <p>Escreva aqui um parágrafo se apresentando: quem você é, o que estuda
+          e o que gosta de fazer na área de tecnologia.</p>
+      </section>
 
-    <section>
-        <h3>Data de Nascimento</h3>
-        <p>07/08/2010</p>
-    </section>
+      <section id="projetos" class="cartao">
+        <h2>Projetos</h2>
+        <!-- Galeria com Grid: cada .projeto é um card; adicione/remova à vontade -->
+        <div class="projetos">
+          <article class="projeto">
+            <h3>Projeto 1</h3>
+            <p>O que é e o que você fez. TROQUE por um projeto seu.</p>
+          </article>
+          <article class="projeto">
+            <h3>Projeto 2</h3>
+            <p>Descrição curta do projeto.</p>
+          </article>
+          <article class="projeto">
+            <h3>Projeto 3</h3>
+            <p>Descrição curta do projeto.</p>
+          </article>
+        </div>
+      </section>
+    </main>
 
-    <section>
-        <h3>Sobre mim</h3>
-        <article>
-            <p>
-                Meu nome é João, gosto de treinar, jogar Minecraft e estudar programação.
-                Curto músicas de rap de anime, reggae e mpb.
-                Meu objetivo é evoluir fisicamente e me tornar cada vez melhor.
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h3>Conhecimentos</h3>
-        <ul>
-            <li>HTML básico</li>
-            <li>CSS básico</li>
-            <li>JavaScript (iniciante)</li>
+    <!-- ====== BARRA LATERAL ====== -->
+    <aside class="lateral">
+      <section class="cartao">
+        <h2>Habilidades</h2>
+        <!-- TROQUE pelas suas habilidades -->
+        <ul class="habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Grid</li>
+          <li>JavaScript</li>
         </ul>
-    </section>
+      </section>
 
-    <aside>
-        <h3>Curso</h3>
-        <p>
-            Estou fazendo um curso técnico na área de tecnologia.
-            Saiba mais no site:
-        </p>
-        <a href="https://www.instagram.com/if4lscript_911c?igsh=ZHZidDRpendmMDBu" target="_blank">
-            Acessar site do curso
-        </a>
+      <section id="contato" class="cartao">
+        <h2>Contato</h2>
+        <!-- TROQUE pelos seus links -->
+        <ul class="contato">
+          <li>✉️ <a href="mailto:Jvfs14@aluno.ifal.edu.br">Jvfs14@aluno.ifal.edu.br</a></li>
+          <li>🐙 <a href="https://github.com/jvfs14-create">https://github.com/jvfs14-create</a></li>
+        </ul>
+      </section>
     </aside>
 
-    <section>
-        <h3>Capítulo 4 - Tabelas, Listas e Mídia</h3>
-        <ul>
-            <li><a href="capitulo4/cap04-at01-tabela-basica.html" target="_blank">Atividade 01 - Tabela Básica</a></li>
-            <li><a href="capitulo4/cap04-at02-tabela-semantica.html" target="_blank">Atividade 02 - Tabela Semântica com Mesclagem</a></li>
-            <li><a href="capitulo4/cap04-at03-listas-avancadas.html" target="_blank">Atividade 03 - Listas Avançadas e Glossário</a></li>
-            <li><a href="capitulo4/cap04-at04-multimidia.html" target="_blank">Atividade 04 - Página Multimídia</a></li>
-        </ul>
-    </section>
-    <section>
-      <h3>Capitulo 5 - Formulários HTML</h3>
-        <ul>
-          <li><a href="capitulo5/at01.html" target="_blank">Atividade 01 - Formulário de Cadastro</a></li>
-          <li><a href="capitulo5/at02.html" target="_blank">Atividade 02 - Form de Contato e Mensagem</a></li>
-          <li><a href="capitulo5/at03.html" target="_blank">Atividade 03 - Questionário e Inputs Avançados</a></li>
-          <li><a href="capitulo5/at04.html" target="_blank">Atividade 04 - Pesquisa de Satisfação</a></li>
-          <li><a href="capitulo5/at05.html" target="_blank">Atividade 05 - Login-Sistema</a></li>
-        </ul>
-    </section> 
-    <section>
-        <h3>Atividade em dupla</h3>
-         <ul>
-             <li><a href="trabalho_dupla/index.html" target="_blank">atividade em dupla</a></li>
-         </ul>
-    </section>
-     <section>
-        <h3>Atividade CSS02</h3>
-         <ul>
-             <li><a href="atividade_css02/index.html" target="_blank">Atividade CSS02</a></li>
-         </ul>
-    </section>
-</main>
+    <!-- ====== RODAPÉ — TROQUE o nome ====== -->
+    <footer class="rodape">© 2026 João Vittor Ferreira da Silva · feito com HTML + CSS Grid</footer>
 
-<footer>
-    <p>Contato: jvfs14@aluno.ifal.br</p>
-</footer>
-
+  </div>
 </body>
+
 </html>
